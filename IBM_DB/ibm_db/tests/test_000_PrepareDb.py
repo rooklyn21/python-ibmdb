@@ -24,8 +24,8 @@ class IbmDbTestCase(unittest.TestCase):
 
     def run_test_000(self):
         # Make a connection
-        # conn = ibm_db.connect(config.database, config.user, config.password)
-        conn = ibm_db.connect("database=sample;hostname=localhost;port=50001;protocol=tcpip;uid=db2inst1;pwd=db2inst1", "", "")
+        conn = ibm_db.connect(config.database, config.user, config.password)
+        # conn = ibm_db.connect("database=sample;hostname=localhost;port=50001;protocol=tcpip;uid=db2inst1;pwd=db2inst1", "", "")
 
         # Get the server type
         server = ibm_db.server_info( conn )

@@ -14,7 +14,7 @@ else:
 
 class IbmDbTestFunctions(unittest.TestCase):
     prepconn = ibm_db.connect(config.database, config.user, config.password)
-    preconn = ibm_db.connect("database=sample;hostname=localhost;port=50001;protocol=tcpip;uid=db2inst1;pwd=db2inst1", "", "")
+    # preconn = ibm_db.connect("database=sample;hostname=localhost;port=50001;protocol=tcpip;uid=db2inst1;pwd=db2inst1", "", "")
     server = ibm_db.server_info(prepconn)
     ibm_db.close(prepconn)
 
