@@ -1,2 +1,5 @@
 .idea
 IBM_DB/ibm_db/__pycache__
+IBM_DB/ibm_db/tests/__pycache__
+*.jpg
+*.png
